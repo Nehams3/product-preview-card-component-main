@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.panel {
+    display: flex;
+    margin: 150px auto;
+    width: 35%;
+    border-radius: 50%;
+}
+
+.panel-image {
+    width: 50%;
+}
+
+.panel-content {
+    display: block;
+    padding: 30px;
+    width: 50%;
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.panel-content h2 {
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    color: hsl(228, 12%, 48%);
+}
+
+.panel-content h1 {
+    margin-bottom: 30px;
+    font-family: 'Fraunces', serif;
+    padding-right: 2em;
+}
+
+.panel-content p {
+    text-align: left;
+    line-height: 30px;
+    margin-bottom: 30px;
+    color: hsl(228, 12%, 48%);
+}
+
+.panel-image>img {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.price {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.price-new {
+    font-size: 2em;
+    font-weight: 900;
+    color: hsl(158, 36%, 37%);
+    margin-right: 10px;
+    font-family: 'Fraunces', serif;
+}
+
+.price-old {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+.add-button {
+    width: 100%;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.add-button svg {
+    margin-right: 0.5rem;
+}
+
+.add-button:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+    .panel {
+        flex-direction: column;
+        width: auto;
+        margin: 10px 20px;
+    }
+
+    .panel-image {
+        width: 100%;
+    }
+
+    .panel-content {
+        width: 100%;
+        padding: 20px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .panel-content h1 {
+        padding-right: 0;
+        margin-bottom: 10px;
+        font-size: 1.8rem;
+    }
+
+    .panel-content h2 {
+        margin-bottom: 10px;
+        font-size: 0.8rem;
+        letter-spacing: 3px;
+    }
+
+    .panel-content p {
+        font-size: 0.8rem;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .product {
+        content: url("images/image-product-mobile.jpg");
+    }
+
+    .panel-image>img {
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .price-new {
+        font-size: 1.8rem;
+    }
+
+    .price {
+        margin-bottom: 15px;
+    }
+
+    .add-button {
+        padding: 0.8rem;
+    }
+}
